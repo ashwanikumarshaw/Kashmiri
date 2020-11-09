@@ -276,7 +276,7 @@
 }
 
 </style>
-  <title>Kashmiri the game</title>
+  <title>Koshmiri the game</title>
 </head>
 
 <body onload="BodyLoaded()">
@@ -289,8 +289,8 @@
 
   <div id="MainMenu">
     <div id="Transparent"><br/><br/><br/><br/><br/><br/><b>
-        KASHMIRI</b><br/><span style="font-size:14;">
-            be that Kashmiri....</span><br/><br/>
+        KoSHMIRI</b><br/><span style="font-size:14;">
+            be that Koshmiri....</span><br/><br/>
       <button id="Start" onclick="PlayNow()">Start Now</button>
     </div>
     
@@ -366,29 +366,22 @@ var CollisionDetectorX;
 
 var deg=0;
 var Time=1;
-var Comments=["Tumse na ho payega !!","Kya Kashniri bana ga re tu!!","Aaja tujhe sandas dikhata hun!!","Tera to game bajana padega!!","Ja Ja Kal aana!!"];
+var Comments=["Tumse na ho payega !!","Kya Koshniri bana ga re tu!!","Aaja tujhe sandas dikhata hun!!","Tera to game bajana padega!!","Ja Ja Kal aana!!"];
 
 function MoveRight()
 {
     
     ContinuouslyMove=true;
     ToMoveContinuously=1;
-        //  Move(ToMove);
-      
 
 }
 function MoveLeft()
 {
 
     ContinuouslyMove=true;
-    ToMoveContinuously=-1;
-            //  Move(-ToMove);
-    
-    
+    ToMoveContinuously=-1;  
     
 }
-
-
 
 function BodyLoaded()
 {
@@ -397,8 +390,6 @@ function BodyLoaded()
     clearInterval(int1);
     
 }
-
-
 
 function Move(Amount) //Positive number to move right and negative to move left
 {
@@ -447,11 +438,6 @@ function ToggleBullet()
 }
 
 
-
-
-
-
-
 function setRandomStonePosition()
 {
     var stones=document.getElementsByClassName("Stones");
@@ -469,16 +455,10 @@ function setRandomStonePosition()
 
 
 
-
-
-
 function RangedRandomNumberGenerator(Min,Max)
 {
     return Math.floor(Math.random()*(Max-Min+1))+Min;
 }
-
-
-
 
 
 function MoveStones()
@@ -506,15 +486,10 @@ function MoveStones()
                    
                 }
 
-
-                
-              
             stones[i].style.top=yPos+StoneMovingSpeed;
         }
         
 }
-
-
 
 
 function StonesCollidingY(index)
@@ -536,9 +511,6 @@ function StonesCollidingY(index)
         return false;
  
 }
-
-
-
 
 function PlayNow()
 {
@@ -821,10 +793,6 @@ setInterval(DestroyPlayer,1);
 var int1=setInterval(Load,4);
 setInterval(MoveContinuously,2);
 </script>
-
-
-
-
 
 </body>
 
