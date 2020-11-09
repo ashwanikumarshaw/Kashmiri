@@ -1,7 +1,6 @@
 # Kashmiri
 
 ## Demo
-
-https://ashwanikumarshaw.github.io/Kashmiri/
+https://ashwanikumarshaw.github.io/Koshmiri/
 
 Click to Play
